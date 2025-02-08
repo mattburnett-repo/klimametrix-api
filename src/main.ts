@@ -25,10 +25,6 @@ async function bootstrap() {
   }))
 
   // Setup Swagger documentation
-    .setTitle('KlimaMetrix API')
-    .setDescription('Carbon emissions tracking API')
-    .setVersion('1.0')
-    .addTag('emissions')
     .build()
   
 
