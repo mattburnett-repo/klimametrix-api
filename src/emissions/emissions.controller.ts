@@ -1,10 +1,8 @@
 import { Controller, Get, Post, Body, Query } from '@nestjs/common'
-import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger'
 import { EmissionsService } from './emissions.service'
 import { CreateEmissionDto } from './dto/create-emission.dto'
 import { Emission } from './entities/emission.entity'
 
-@ApiTags('emissions')
 @Controller('emissions')
 export class EmissionsController {
   constructor(private readonly emissionsService: EmissionsService) {}
